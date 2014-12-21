@@ -1,0 +1,23 @@
+<!doctype>
+<html ng-app='directory'>
+<head><title>Directory</title>
+<script type="text/javascript" src="js/angular.js"></script>
+<script type="text/javascript" src="lib/app.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body ng-controller='application'>
+
+	<form id="addData" class="head" ng-submit='addData()'>
+		<h1>Directory</h1>
+		<input type='text' class="textbox headElement" ng-model="Name" placeholder='Enter Name'>
+		<input type='text' class="textbox headElement" ng-model='Age' ng-keyup='$event.keycode == 13 ? addData() : null' placeholder='Enter Age'>
+		<input type='submit' class="button headElement" value='Add Data'>
+		<input type='text' class="textbox headElement" ng-model='search' placeholder='Search'>
+	</form>
+<ul>
+	<li ng-repeat="data in datas | orderBy:'Name' | filter:search">
+		{{data.Name}} {{data.Age}}
+	</li>
+</ul>
+</body>
+</html>

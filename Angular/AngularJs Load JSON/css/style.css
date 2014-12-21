@@ -1,0 +1,41 @@
+*{
+	margin: 0px;
+}
+.headElement{
+    border-radius: 9px;
+    margin: 5px;
+    padding: 3px;
+    width: 250px;
+    height: 40px;
+    text-align: center;
+    font-size: 1.2em;
+}
+.textbox{
+	background-color: #DCDEE6;
+}
+.button{
+	background-color: blue;
+	border: none;
+}
+.button:active{
+	background-color: grey;
+	border: none;
+}
+.head{
+	text-align:center;
+	background-color: black;
+}
+h1{
+	color: white;
+	margin-bottom: 5px;
+    text-decoration: underline;
+}
+ul, li{
+	border-bottom: 1px solid;
+	list-style: none;
+	padding: 5px 0px 5px 0px;
+	font-size: 20px;
+}
+li:hover{
+	background-color: blue;
+}
